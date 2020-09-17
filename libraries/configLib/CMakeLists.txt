@@ -4,8 +4,10 @@
 ##target_link_libraries(configLib INTERFACE stdc++fs)
 #message(${CMAKE_CURRENT_SOURCE_DIR}/libConfigLib.a)
 
+if(NOT TARGET configLib)
 add_library(configLib INTERFACE)
 target_link_libraries(configLib INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/libConfigLib.a)
+endif()
 
 #add_library(configLib ${CMAKE_CURRENT_SOURCE_DIR}/cygConfigLibShared.dll)
 #add_library(configLib ${CMAKE_CURRENT_SOURCE_DIR}/libConfigLib.a)
