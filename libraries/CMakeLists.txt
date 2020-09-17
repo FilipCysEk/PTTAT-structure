@@ -10,4 +10,7 @@
 
 add_subdirectory(configLib)
 add_subdirectory(fileLib)
+if(NOT TARGET spdlog)
 add_subdirectory(spdlog)
+
+endif()
