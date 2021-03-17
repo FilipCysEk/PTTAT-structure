@@ -2,7 +2,7 @@
 // Created by krzysiu on 24.08.2020.
 //
 
-#include "../include/Logger.h"
+#include "Logger.h"
 
 std::shared_ptr<spdlog::logger> Logger::createLogger(std::string loggerName, unsigned int maxFileSize,
                                                      unsigned short maxFileAmount,

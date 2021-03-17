@@ -3,7 +3,7 @@
 //
 
 
-#include "../includePublic/DataManager/DataContainer.h"
+#include "DataManager/DataContainer.h"
 
 DataManagerStructure::DataContainer::~DataContainer() {
     clearData();

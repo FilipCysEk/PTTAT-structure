@@ -2,7 +2,7 @@
 // Created by krzysiu on 05.08.2020.
 //
 
-#include "../includePublic/DataManager/DataAccess.h"
+#include "DataManager/DataAccess.h"
 
 
 DataAccess::DataAccess(DataContainer *dataContainer) : dataContainer(dataContainer) {

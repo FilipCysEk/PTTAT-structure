@@ -2,7 +2,7 @@
 // Created by krzysiu on 21.06.2020.
 //
 
-#include "../includePublic/DataManager/DataManager.h"
+#include "DataManager/DataManager.h"
 
 DataManager::DataManager(ConfigFile *config, unsigned short amountKeepOldVehiclePositions)
         : amountKeepOldVehiclePositions(amountKeepOldVehiclePositions), conf(config) {

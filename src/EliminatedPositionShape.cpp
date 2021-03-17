@@ -2,7 +2,7 @@
 // Created by krzysiu on 21.06.2020.
 //
 
-#include "../includePublic/DataManager/EliminatedPositionShape.h"
+#include "DataManager/EliminatedPositionShape.h"
 #include <iostream>
 bool DataManagerStructure::EliminatedPositionShape::isIn(DataManagerStructure::Position position) {
     bool inside = false;
