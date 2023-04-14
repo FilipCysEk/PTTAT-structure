@@ -5,6 +5,8 @@
 #ifndef TRAMHOLDUP_TRIP_H
 #define TRAMHOLDUP_TRIP_H
 
+#include <vector>
+
 using namespace std;
 
 namespace DataManagerStructure {

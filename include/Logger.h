@@ -14,6 +14,8 @@
 #include <chrono>
 #include <vector>
 
+using namespace std;
+
 class Logger {
 private:
 
