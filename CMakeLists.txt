@@ -8,15 +8,14 @@ if (CCACHE_FOUND)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache) # Less useful to do it for linking, see edit2
 endif (CCACHE_FOUND)
 
+set(PTTAT_S_exist true PARENT_SCOPE)
+set(PTTAT_S_PATH ${CMAKE_CURRENT_SOURCE_DIR} PARENT_SCOPE)
+
 include_directories(libraries)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libraries)
 
-#if (NOT TARGET spdlog)
-#    # Stand-alone build
-#    find_package(spdlog REQUIRED)
-#endif ()
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 
 add_library(PTTAT_structure STATIC
         src/DataAccess.cpp
@@ -26,9 +25,6 @@ add_library(PTTAT_structure STATIC
         src/Logger.cpp)
 
 target_precompile_headers(PTTAT_structure PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/rapidjson_pch.h)
-#target_precompile_headers(PTTAT_structure PUBLIC ${CMAKE_SOURCE_DIR}/include/spdlog_pch.h)
-target_precompile_headers(PTTAT_structure PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/libraries/configLib/ConfigFile.h)
-target_precompile_headers(PTTAT_structure PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/libraries/fileLib/FileLib.h)
 
 target_link_libraries(PTTAT_structure PUBLIC fileLib)
 target_link_libraries(PTTAT_structure PUBLIC configLib)
