@@ -20,6 +20,7 @@ namespace DataManagerStructure {
         Position position;
         Trip *trip;
         bool isInEliminatedPosition;
+        int delay;
 
         VehicleData(const chrono::system_clock::time_point &date, const string &id, const Position &position,
                     Trip *trip) : date(date), id(id), position(position), trip(trip) {}

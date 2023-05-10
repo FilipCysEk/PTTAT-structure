@@ -18,6 +18,7 @@
 #include "DataAccess.h"
 #include "configLib/ConfigFile.h"
 #include "fileLib/FileLib.h"
+#include <boost/config.hpp>
 #include <spdlog/sinks/rotating_file_sink.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/basic_file_sink.h>
@@ -26,7 +27,7 @@ using namespace std;
 using namespace DataManagerStructure;
 using namespace rapidjson;
 
-class DataManager {
+class BOOST_SYMBOL_VISIBLE DataManager {
 private:
     vector<EliminatedPositionShape> eliminatedPositionList;
 
