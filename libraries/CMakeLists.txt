@@ -8,7 +8,7 @@
 ##target_include_directories(fileLib INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 ##target_include_directories(mainApp "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
-add_subdirectory(configLib)
+add_subdirectory(ConfigFileLib)
 add_subdirectory(fileLib)
 
 if(NOT TARGET spdlog)

@@ -3,3 +3,6 @@
 	path = libraries/spdlog
 	url = https://github.com/gabime/spdlog.git
 	branch = v1.x
+[submodule "libraries/ConfigFileLib"]
+	path = libraries/ConfigFileLib
+	url = https://github.com/FilipCysEk/ConfigFileLib.git

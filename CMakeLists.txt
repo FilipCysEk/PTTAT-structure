@@ -27,5 +27,5 @@ add_library(PTTAT_structure STATIC
 target_precompile_headers(PTTAT_structure PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/rapidjson_pch.h)
 
 target_link_libraries(PTTAT_structure PUBLIC fileLib)
-target_link_libraries(PTTAT_structure PUBLIC configLib)
+target_link_libraries(PTTAT_structure PUBLIC ConfigLib)
 target_link_libraries(PTTAT_structure PRIVATE spdlog::spdlog)
